@@ -1,0 +1,45 @@
+body {
+	text-align: center;
+}
+header,
+footer {
+	background-color: #000;
+	color: #fff;
+	padding: 10px;
+}
+
+footer {
+	font-size: 13px;
+	letter-spacing: 1.5pt;
+}
+
+h1,
+h2 {
+	margin: 0;
+}
+
+h2, #currentdate {
+	color: yellow;
+}
+
+main {
+	margin: 10px auto;
+	border: 1px solid #999;
+	padding: 10px;
+	max-width: 500px;
+	background-color: #abe;
+	box-shadow: 0 0 30px;
+}
+
+h3 {
+	font-size: 24px;
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid #333;
+	padding: 0;
+}
+
+label {
+	display: block;
+	margin: 5px;
+}
+
