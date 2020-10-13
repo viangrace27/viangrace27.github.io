@@ -1,15 +1,15 @@
 /* Defining Table
- INPUT:  Get two numbers from two different input boxes - x and y
- PROCESSING: Add the two numbers together store in sum
- OUTPUT: Display sum on the document
+ INPUT:  Input the number of pounds in box x
+ PROCESSING: Convert pounds to kilograms and store in quotient
+ OUTPUT: Display kilograms on the document
 */ 
 
-function addNumbers() {
+function poundsTokilogramsConverter() {
 	//INPUT
-	 let x = parseFloat(document.getElementById('number1').value);
-	 let y = parseFloat(document.getElementById('number2').value);
+	 let x = parseFloat(document.getElementById('numberofpounds').value);
+	 
 	//PROCESSING
-	 let sum = x + y;
+	 let quotient = ( x*1 ) / 2.20406;
 	//OUTPUT
-	 document.getElementById('output').innerHTML = "The sum of " + x + " and " + y + " equals " + sum + "!";
+	 document.getElementById('output').innerHTML =  x + " pounds " + "is" + " equals " + qoutient + "kilograms" + "!";
 }
