@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset= "UTF-8">
+	<meta name="viewpoint" content ="width=device-width">
+	<title> Convert Pounds to Kilograms</title>
+    <link rel="stylesheet" href= "style.css" type ="text/css">
+<script>
+	/*Input:Enter a number in pounds to be converted to kilograms.
+	Processing: Convert pounds to kilograms
+	Round the distance to one digit after the decimal
+	Output: rounded kilograms*/
+	function convertpoundsTokilograms() {
+		//Input a number from the user.
+		let x = parseFloat(document.getElementById('xinputBox').value);
+
+		//Convert pounds to kilograms.
+		let kilograms = x / 2.20406;
+
+		//Round off answers in kilograms to one digit after the decimal
+		let digits = 1;
+		let multiplier = Math.pow(10, digits);
+		kilograms= Math.round(kilograms * multiplier) / multiplier;
+
+		//Display the kilograms to the user.
+	    document.getElementById('output').innerHTML = kilograms + "kilograms";
+	
+}
+</script>
+</head>
+
+<body>
+    
+<header>
+	<h1>Week 5: Converting Pounds to Kilograms</h1>
+	<h2>Vivian Grace V. Dudas</h2>
+</header>
+<main>
+	<h3>Converting Pounds to Kilograms</h3>
+	<label>Enter the Number of Pounds: <input type="text" id="number1"></label>
+	<label><button onclick="convertpoundsTokilograms()">Convert to Kilograms</button></label>
+	<hr>
+	<p><span id="output"></span></p>
+</main>
+<footer>
+    	&copy;2020 &bull; Vivian Grace V. Dudas &bull; BYU-Idaho &bull; CIT 160
+</footer>
+</body>
+</html>
