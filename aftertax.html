@@ -1,0 +1,49 @@
+!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset= "UTF-8">
+	<meta name="viewpoint" content ="width=device-width">
+	<title> CIT 160 Examination</title>
+    
+</head>
+
+<body>
+<header>
+	<h1>Week 5: Examination</h1>
+	<h2>Vivian Grace V. Dudas</h2>
+</header>
+<main>
+	<h3>After Tax Pay</h3>
+	<label>Enter Number One: <input type="text" id="number1"></label>
+    <label>Enter Number Two: <input type="text" id="number2"></label>
+	<label><button onclick="addNumbers()">Pay</button></label>
+	<hr>
+	<p><span id="output"></span></p>
+</main>
+<footer>
+    	&copy;2020 &bull; Vivian Grace V. Dudas &bull; BYU-Idaho &bull; CIT 160
+</footer>
+</body>
+</html>
+<script>
+    /* Defining Table
+ INPUT:  Get two numbers from two different input boxes - x and y
+ PROCESSING: Add the two numbers together store in sum
+ OUTPUT: Display sum on the document
+*/ 
+
+function addNumbers() {
+	//INPUT
+     let x = parseFloat(document.getElementById('number1').value);
+     let y = parseFloat(document.getElementById('number2').value);
+    
+    //PROCESSING
+     let sum = x *15 + y*22.50;
+     tax= sum*0.15;
+     result=Math.round(sum-tax);
+	//OUTPUT
+	 document.getElementById('output').innerHTML = "Your after tax pay "+ " is " + result + "!";
+}
+</script>
+</body>
+</html>

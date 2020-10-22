@@ -1,0 +1,48 @@
+!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset= "UTF-8">
+	<meta name="viewpoint" content ="width=device-width">
+	<title> CIT 160 Examinationt</title>
+    
+</head>
+
+<body>
+<header>
+	<h1>Week 5: Examination</h1>
+	<h2>Vivian Grace V. Dudas</h2>
+</header>
+<main>
+	<h3>Volume of a Round Cylinder</h3>
+	<label>Enter Radius: <input type="text" id="number1"></label>
+    <label>Enter Height: <input type="text" id="number2"></label>
+	<label><button onclick="addNumbers()">Volume</button></label>
+	<hr>
+	<p><span id="output"></span></p>
+</main>
+<footer>
+    	&copy;2020 &bull; Vivian Grace V. Dudas &bull; BYU-Idaho &bull; CIT 160
+</footer>
+</body>
+</html>
+<script>
+    /* Defining Table
+ INPUT:  Enter radius and height of the round cylinder - r and h
+ PROCESSING: Square the radius and multiply to PI and height and store in volume
+ OUTPUT: Display volume on the document
+*/ 
+
+
+function addNumbers() {
+	//INPUT
+	 let r = parseFloat(document.getElementById('number1').value);
+	 let h = parseFloat(document.getElementById('number2').value);
+	//PROCESSING
+     let volume = Math.PI*r*r*h;
+     result =Math.round(volume);
+	//OUTPUT
+	 document.getElementById('output').innerHTML = "Volume is equal to" + " "+ result;
+}
+</script>
+</body>
+</html>
