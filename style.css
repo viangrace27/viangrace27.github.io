@@ -14,7 +14,7 @@ footer {
 }
 
 h1 {
-    background-color: rgb(92, 27, 92);
+    background-color:rgb(120, 181, 231);
     margin: 0;
     padding: 10px;
 }
@@ -34,7 +34,7 @@ main {
 	border: 1px solid #999;
 	padding: 10px;
 	max-width: 500px;
-	background-color: rgb(116, 224, 116);
+	background-color: rgb(100, 211, 228);
 	box-shadow: 0 0 30px;
 }
 
