@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="en-us"> 
+<html lang="en-us">
+
 <head>
-	<meta charset= "UTF-8">
-	<meta name="viewpoint" content ="width=device-width">
-	<title> CIT 160 Assignment: Simple Calculator</title>
-	<link rel="stylesheet" href= "style.css" type ="text/css">
-	<script src ="calculator.js"defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Simple Calculator</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<header>
-	<h1>Week 6: Simple Calculator</h1>
-	<h2>Vivian Grace V. Dudas</h2>
-</header>
-<main>
-	<h3>Math Quiz</h3>
-	<label>Enter Number One: <input type="text" id="number1" size="3"></label>
-	<Select name ="operator" id="symbol" size = "2">
+    <header>
+        <h1>Week 6: Simple Calculator</h1>
+        <h2>Vivian Grace V. Dudas</h2>
+    </header>
+    <main>
+        <h3>Basic Math Quiz!</h3>
+        <label><input type="text" id="number1" size ="3"></label>
+        <select name="operators" id="operator" size = "1">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            </select>
+        <label><input type="text" id="number2" size ="3"></label>
         
-        <Option value = "add"> + </Option>
-        <Option value = "subtract"> - </Option>
-		<Option value = "divide"> / </Option>
-		<Option value = 'multiply'> * </Option>
-    </Select>
-	
-	<label>Enter Number Two: <input type="text" id="number2" size = "3"></label>
-	<label> = <input type="text" id="number3" size ="3"></label>
-	<label><button onclick = "simpleCalculator()"> Check Answer</button></label>
-	
-	<hr>
-	<p><span id="output"></span></p>
-</main>
-<footer>
-    	&copy;2020 &bull; Vivian Grace V. Dudas &bull; BYU-Idaho &bull; CIT 160
-</footer>
+        <label> = <input type="text" id="answer" size = "3"></label>
+        <hr>
+        <label><button type="button" onclick="simpleCalculator()">Check Answer</button></label>
+        <br>
+        <br>
+        <p><span id="output"></span></p>
+        
+    </main>
+    <footer>
+        &copy;2020 &bull; Vivian Grace V. Dudas &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script src="calculator.js"></script>
 </body>
+
 </html>

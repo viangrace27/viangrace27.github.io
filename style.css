@@ -14,7 +14,7 @@ footer {
 }
 
 h1 {
-    background-color:rgb(120, 181, 231);
+    background-color:rgb(11, 141, 247);
     margin: 0;
     padding: 10px;
 }
@@ -46,7 +46,15 @@ h3 {
 }
 
 label {
-	display: block;
+	display: inline;
 	margin: 5px;
 }
-
+}
+input, button {
+	width: 50px;
+	padding: 1px;
+	margin-top: 5px;
+}
+p {
+	display: inline;
+}
