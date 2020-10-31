@@ -24,12 +24,12 @@ function salesDiscount() {
     if (subTotal > 50 && dayOfWeek == 'Tuesday' || dayOfWeek =='Wednesday') {
         // There is a 10% discount every Tuesday and Wednesday
         discount = 0.10;
-        totalAmountDue = discountedTotal + tax;
+        totalAmountDue = (discountedTotal + tax).toFixed(2);
     
     }
     else {
          discount = 0;    
-         totalAmountDue = discountedTotal + tax;
+         totalAmountDue = (discountedTotal + tax).toFixed(2);
     }
         
 
