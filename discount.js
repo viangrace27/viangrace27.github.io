@@ -6,34 +6,38 @@
  OUTPUT: Display amount due to the user.
 */ 
 
-//Get input from computer's clock.
+
 
 function salesDiscount() {
 
-    let dayOfWeek = new Date().getDay();
-    // Take customer's subtotal amount
+     // Take customer's subtotal amount
     let subTotal = parseFloat(document.getElementById('number1').value);
-    let discount = 0;
-    let discountedTotal = subTotal - (subTotal * discount);
-    let taxRate = 0.06;
-    let tax = subTotal * taxRate;
-    let totalAmountDue = subTotal + tax;
+
+    //Get input from computer's clock.
+    let now = new Date();
+    let month = now.getMonth();
+    let dayOfMonth = now.getDay();
+    let dayOfWeek = 3;
+    
+    
     //Processing:
     //Solve for discount and total amount due.
     
-    if (subTotal > 50 && dayOfWeek == 'Tuesday' || dayOfWeek =='Wednesday') {
+    if (dayOfWeek === 2 || 3 && subTotal > 50 ) {
         // There is a 10% discount every Tuesday and Wednesday
-        discount = 0.10;
-        totalAmountDue = (discountedTotal + tax).toFixed(2);
+
+        subTotal = subTotal- subTotal* 0.1;
     
     }
-    else {
-         discount = 0;    
-         totalAmountDue = (discountedTotal + tax).toFixed(2);
-    }
+        
+     let totalAmountDue = subTotal + subTotal* 0.06;
+     let digits = 2;
+     let multiplier = Math.pow (10, digits);
+     totalAmountDue = Math.round (totalAmountDue * multiplier) / multiplier;
+     totalAmountDue = totalAmountDue.toFixed(2);
         
 
 	//OUTPUT
-     document.getElementById('output').innerHTML = "The amount due is"+ "  " + totalAmountDue + "!";
+     document.getElementById('output').innerHTML = "The amount due is"+ " $ " + totalAmountDue + "!";
     
 }

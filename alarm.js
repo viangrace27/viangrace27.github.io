@@ -2,24 +2,28 @@
 	Get date, month, day of month and day of week.
     */
     
-	function myAlarm() {
-   //Get inputs from my computer. 
+	
   
-  let today = new Date();
-  let month = today.getMonth();
-  let dayOfMonth = today.getDate();
-  let dayOfWeek = today.getDay();
-  let holiday = ['January 1','July 4', 'December 25'];
-  // Processing: Determine whether the user should get-up or sleep in.
+  function myAlarm() {
 
-  
+ //Get inputs from my computer. 
+  let now = new Date();
+  let month = now.getMonth();
+  let dayOfMonth = now.getDate();
+  let dayOfWeek = now.getDay();
   let message;
-
-  if (today == "Monday" || today =='Tuesday' || today == 'Wednesday' || today =='Thursday' || today == 'Friday' && today !='holiday'){
-       message = "Get-up!";   
+  // Processing: Determine whether the user should get-up or sleep in.
+    
+  if (dayOfWeek == 0 || dayOfWeek == 6){
+       message = "Sleep in!";   
   }
-  else {
+  else if (month ==11 && dayOfMonth ==25){
        message = 'Sleep in!'; 
+  }
+  else if (month == 6 && dayOfMonth == 4){
+       message ="Sleep in!";
+  } else {
+       message = "Get-up!";
   }
 
  
