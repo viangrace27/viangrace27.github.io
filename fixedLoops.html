@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset= "UTF-8">
+	<meta name="viewpoint" content ="width=device-width">
+	<title> CIT 160 Assignment: Fix Loops Structure</title>
+    <link rel="stylesheet" href= "fixLoops.css" type ="text/css">
+</head>
+
+<body>
+<header>
+	<h1>Week 8: Fix Loops Structures</h1>
+	<h2>Vivian Grace V. Dudas</h2>
+</header>
+<main>
+	<h3>Fixing Loops</h3>
+</header>
+<main>
+	
+
+    <label><button onclick="fixLoops()">Display</button></label>
+    
+	<hr>
+    <p><span id="display1"></span></p>
+    <p><span id="display2"></span></p>
+    <p><span id="display3"></span></p>
+    <p><span id="display4"></span></p>
+</main>
+<footer>
+    	&copy;2020 &bull; Vivian Grace V. Dudas &bull; BYU-Idaho &bull; CIT 160
+</footer>
+<script>
+
+function fixLoops(){
+
+let output1 = " ";
+let i = 0;
+while (i < 2) {
+    output1 += `Part 1:${i}<br>`;
+    i++;
+}
+document.getElementById('display1').innerHTML = output1;
+
+/*output should be
+Part 1:0
+Part 1:1*/
+
+let output2 = " ";
+for (let j = 0; j < 3; j++) {
+  if (j !=2) {
+    output2 += `Part 2:${j}, `;
+  }
+  else {
+    output2 += `Part 2:${j}`;
+  }
+}  
+document.getElementById('display2').textContent = output2;
+
+//output should be
+//Part 2:0, Part 2:1, Part 2:2
+
+
+let output3 ="";
+for (let k = 0; k < 4; k++ ) {
+  output3 += k + " ";
+}
+document.getElementById('display3').textContent = output3;
+
+//output should be
+//0 1 2 3 
+
+
+let balance = 1000;
+const rate = .10;
+let n = 30;
+let interest;
+for (let s = 1; s < n; s++) {
+    interest = balance * rate;
+    balance += interest;
+}
+    balance = balance.toFixed(2);
+document.getElementById('display4').textContent = balance;
+
+//output should be
+//15863.09
+
+/*let i = 0;
+while (i < 3); {
+    // valid statements (this is not the problem)
+    // There should be no semi-colon after the condition.
+    i++;*/
+}
+</script>
+</body>
+</html>
