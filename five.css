@@ -1,0 +1,57 @@
+body {
+	text-align: center;
+}
+header,
+footer {
+	background-color: black;
+	color: white;
+	padding: 10px;
+}
+
+footer {
+	font-size: 13px;
+	letter-spacing: 1.5pt;
+}
+
+h1 {
+    background-color:rgb(11, 141, 247);
+    margin: 0;
+    padding: 10px;
+}
+h2 {
+	margin: 0;
+}
+h1, #currentdate {
+    color : white
+}
+
+h2, #currentdate {
+	color: #ffff00;
+}
+
+main {
+	margin: 10px auto;
+	border: 1px solid #999;
+	padding: 10px;
+	max-width: 500px;
+	background-color: rgb(100, 211, 228);
+	box-shadow: 0 0 300px;
+}
+
+h3 {
+	font-size: 24px;
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid #333;
+	padding: 0;
+}
+
+label {
+	display: block;
+	margin: 5px;
+}
+input, button {
+	width: 50px;
+	padding: 1px;
+	margin-top: 5px;
+}
+
