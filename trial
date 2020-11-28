@@ -1,0 +1,2 @@
+
+let r = min + Math.floor(Math.random() * (11 - 5));

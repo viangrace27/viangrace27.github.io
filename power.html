@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset= "UTF-8">
+	<meta name="viewpoint" content ="width=device-width">
+	<title> CIT 160 Examination</title>
+	<link rel="stylesheet" href= "five.css" type ="text/css">
+	
+</head>
+
+<body>
+<header>
+	<h1>Examination</h1>
+	<h2>Vivian Grace V. Dudas</h2>
+</header>
+<main>
+	<h3>Power of Two</h3>
+	
+	<label><button type="button" onclick="powerOfTwo()">Power of Two</button></label>
+	<hr>
+	<p><span id='output'></span></p>
+</main>
+<footer>
+    	&copy;2020 &bull; Vivian Grace V. Dudas &bull; BYU-Idaho &bull; CIT 160
+</footer>
+<script>
+   
+
+function powerOfTwo() {
+     
+     //String outputs of all powers of two
+     //2^0 to 2^31
+     //Increment number by 1
+     
+     let message = " ";
+     let power = 2;
+    
+    
+         for (let i = 0; i <=31; i++) {
+              message += (power**i) + ","+ "<br>";
+     
+     }
+     
+     //OUTPUT
+     document.getElementById('output').innerHTML = message;
+     }
+</script>
+</body>
+</html>
