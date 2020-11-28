@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset= "UTF-8">
+	<meta name="viewpoint" content ="width=device-width">
+	<title> CIT 160 Assignment: More Functions with Parameters</title>
+    <link rel="stylesheet" href= "invest.css" type ="text/css">
+    
+</head>
+
+<body>
+    
+<header>
+	<h1>Week 11: More Function With Parameters</h1>
+	<h2>Vivian Grace V. Dudas</h2>
+</header>
+<main>
+	
+	<h3>Investment Calculator</h3>
+	<form id="resetForm">
+	<label>Amount Invested (principal) : <input type="text" id="principal" size="10"></label><br>
+	<label>Annual Rate : <input type= "text" id = "annualRate" size = "10"></label><br>
+	<label>Number of years : <input type= "text" id = "years" size = "10"></label><br>
+	<label>Periods per years : <input type= "text" id = "periodsPerYear" size = "10"></label><br>
+	<label><button type= "button" onclick ="doFV()">Compute future value</button></label><br>
+	<label><button type= "button" onclick ="reset()" value =" Reset form">Reset</button></label><br>
+    <hr>
+	<div id="outputDiv" size="80"></div>
+</main>
+<footer>
+    	&copy;2020 &bull; Vivian Grace V. Dudas &bull; BYU-Idaho &bull; CIT 160
+</footer>
+<script src= "invest.js"defer></script>
+</body>
+</html>
+
