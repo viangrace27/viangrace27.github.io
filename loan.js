@@ -55,7 +55,7 @@ function computeBalance(a, r, y, n, d) {
 
 
 
-// Reset the form
+// Reset
 function reset() {
 	document.getElementById("resetForm").reset();
 }
