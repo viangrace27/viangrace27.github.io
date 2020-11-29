@@ -28,7 +28,7 @@ function doFV() {
 }
 
 
-	// Reset the form
+// Reset the form
 function reset() {
 	document.getElementById("resetForm").reset();
 }
