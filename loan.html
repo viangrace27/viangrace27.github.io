@@ -4,7 +4,7 @@
 	<meta charset= "UTF-8">
 	<meta name="viewpoint" content ="width=device-width">
 	<title> CIT 160 Assignment: More Functions with Parameters</title>
-    <link rel="stylesheet" href= "invest.css" type ="text/css">
+    <link rel="stylesheet" href= "loan.css" type ="text/css">
     
 </head>
 
@@ -17,16 +17,18 @@
 <main>
 	
 	<h3>Loan Calculator</h3>
-	<form id="resetForm"></form>
+	<form id="resetForm">
 	<label>Amount borrowed (principal) : <input type="text" id="principal" size="10"></label><br>
-	<label>Annual interest rate : <input type= "text" id = "annualInteresRate" size = "10"></label><br>
+	<label>Annual interest rate : <input type= "text" id = "rate" size = "10"></label><br>
 	<label>Number of years : <input type= "text" id = "years" size = "10"></label><br>
-	<label>Payments per year : <input type= "text" id = "payment" size = "10"></label><br>
-    <label><button type= "button" onclick ="doPayment()">Compute payment</button></label><br>
-    <label>Number of payments paid to date: <input type = "text" id= "number" size= "10"></label>
-    <label><button type= "button" onclick ="doBalance()">Compute balance</button></label><br>
+	<label>Payments per year : <input type= "text" id = "periods" size = "10"></label><br>
+    <label><button type= "button" onclick ="doPayment()"> Compute payment </button></label><br>
+    <div id="outputDiv1"></div>
+    <label>Number of payments paid to date: <input type = "text" id= "payments" size= "10"></label>
+    <label><button type= "button" onclick ="doBalance()">Compute pay off amount</button></label><br>
+    <div id="outputDiv2"></div>
 	<label><button type= "button" onclick ="reset()" value =" Reset form">Reset</button></label><br>
-	<div id="outputDiv"></div>
+	<div id="outputDiv1"></div>
 </main>
 <footer>
     	&copy;2020 &bull; Vivian Grace V. Dudas &bull; BYU-Idaho &bull; CIT 160
