@@ -16,20 +16,22 @@
 </header>
 <main>
 	
-	<h3>Investment Calculator</h3>
+	<h3>Loan Calculator</h3>
 	<form id="resetForm"></form>
-	<label>Amount Invested (principal) : <input type="text" id="principal" size="10"></label><br>
-	<label>Annual Rate : <input type= "text" id = "annualRate" size = "10"></label><br>
+	<label>Amount borrowed (principal) : <input type="text" id="principal" size="10"></label><br>
+	<label>Annual interest rate : <input type= "text" id = "annualInteresRate" size = "10"></label><br>
 	<label>Number of years : <input type= "text" id = "years" size = "10"></label><br>
-	<label>Periods per years : <input type= "text" id = "periodsPerYear" size = "10"></label><br>
-	<label><button type= "button" onclick ="doFV()">Compute future value</button></label><br>
+	<label>Payments per year : <input type= "text" id = "payment" size = "10"></label><br>
+    <label><button type= "button" onclick ="doPayment()">Compute payment</button></label><br>
+    <label>Number of payments paid to date: <input type = "text" id= "number" size= "10"></label>
+    <label><button type= "button" onclick ="doBalance()">Compute balance</button></label><br>
 	<label><button type= "button" onclick ="reset()" value =" Reset form">Reset</button></label><br>
 	<div id="outputDiv"></div>
 </main>
 <footer>
     	&copy;2020 &bull; Vivian Grace V. Dudas &bull; BYU-Idaho &bull; CIT 160
 </footer>
-<script src= "invest.js" defer></script>
+<script src= "loan.js" defer></script>
 </body>
 </html>
 
